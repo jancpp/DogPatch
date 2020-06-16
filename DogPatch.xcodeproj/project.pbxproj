@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D79DF5A249946E500DC79BD /* DogPatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79DF59249946E500DC79BD /* DogPatchTests.swift */; };
 		4213CCA0221738DF0047BA3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4213CC9F221738DF0047BA3D /* AppDelegate.swift */; };
 		4213CCA2221738DF0047BA3D /* ListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4213CCA1221738DF0047BA3D /* ListingsViewController.swift */; };
 		4213CCA7221738DF0047BA3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4213CCA5221738DF0047BA3D /* Main.storyboard */; };
@@ -31,7 +32,20 @@
 		95C82A1E233BC7D400CA2CF9 /* LogoNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C82A1D233BC7D400CA2CF9 /* LogoNavigationItem.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3D79DF5C249946E500DC79BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4213CC94221738DF0047BA3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4213CC9B221738DF0047BA3D;
+			remoteInfo = DogPatch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3D79DF57249946E500DC79BD /* DogPatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogPatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D79DF59249946E500DC79BD /* DogPatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPatchTests.swift; sourceTree = "<group>"; };
+		3D79DF5B249946E500DC79BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4213CC9C221738DF0047BA3D /* DogPatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogPatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4213CC9F221738DF0047BA3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4213CCA1221738DF0047BA3D /* ListingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D79DF54249946E500DC79BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4213CC99221738DF0047BA3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D79DF58249946E500DC79BD /* DogPatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D79DF59249946E500DC79BD /* DogPatchTests.swift */,
+				3D79DF5B249946E500DC79BD /* Info.plist */,
+			);
+			path = DogPatchTests;
+			sourceTree = "<group>";
+		};
 		4213CC93221738DF0047BA3D = {
 			isa = PBXGroup;
 			children = (
 				4213CC9E221738DF0047BA3D /* DogPatch */,
+				3D79DF58249946E500DC79BD /* DogPatchTests */,
 				4213CC9D221738DF0047BA3D /* Products */,
 			);
 			indentWidth = 2;
@@ -83,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4213CC9C221738DF0047BA3D /* DogPatch.app */,
+				3D79DF57249946E500DC79BD /* DogPatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +272,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D79DF56249946E500DC79BD /* DogPatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D79DF5E249946E500DC79BD /* Build configuration list for PBXNativeTarget "DogPatchTests" */;
+			buildPhases = (
+				3D79DF53249946E500DC79BD /* Sources */,
+				3D79DF54249946E500DC79BD /* Frameworks */,
+				3D79DF55249946E500DC79BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D79DF5D249946E500DC79BD /* PBXTargetDependency */,
+			);
+			name = DogPatchTests;
+			productName = DogPatchTests;
+			productReference = 3D79DF57249946E500DC79BD /* DogPatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4213CC9B221738DF0047BA3D /* DogPatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4213CCBB221738E00047BA3D /* Build configuration list for PBXNativeTarget "DogPatch" */;
@@ -263,10 +313,14 @@
 		4213CC94221738DF0047BA3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Razeware, LLC";
 				TargetAttributes = {
+					3D79DF56249946E500DC79BD = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 4213CC9B221738DF0047BA3D;
+					};
 					4213CC9B221738DF0047BA3D = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1100;
@@ -287,11 +341,19 @@
 			projectRoot = "";
 			targets = (
 				4213CC9B221738DF0047BA3D /* DogPatch */,
+				3D79DF56249946E500DC79BD /* DogPatchTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D79DF55249946E500DC79BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4213CC9A221738DF0047BA3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +369,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D79DF53249946E500DC79BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D79DF5A249946E500DC79BD /* DogPatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4213CC98221738DF0047BA3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +403,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3D79DF5D249946E500DC79BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4213CC9B221738DF0047BA3D /* DogPatch */;
+			targetProxy = 3D79DF5C249946E500DC79BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		4213CCA5221738DF0047BA3D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -353,6 +431,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D79DF5F249946E500DC79BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SQFG95Y4R;
+				INFOPLIST_FILE = DogPatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appskc.DogPatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogPatch.app/DogPatch";
+			};
+			name = Debug;
+		};
+		3D79DF60249946E500DC79BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SQFG95Y4R;
+				INFOPLIST_FILE = DogPatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appskc.DogPatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogPatch.app/DogPatch";
+			};
+			name = Release;
+		};
 		4213CCB9221738E00047BA3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,6 +630,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D79DF5E249946E500DC79BD /* Build configuration list for PBXNativeTarget "DogPatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D79DF5F249946E500DC79BD /* Debug */,
+				3D79DF60249946E500DC79BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4213CC97221738DF0047BA3D /* Build configuration list for PBXProject "DogPatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
