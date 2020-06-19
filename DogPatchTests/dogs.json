@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Jack",
+    "sellerID": "6C739AF2-34FC-41AA-B456-D6C2812E58D7",
+    "about": "Jack is a chill, fun-loving kinda dog. He's the kinda dog that likes piña coladas and dancin' in the rain.",
+    "breederRating": 4.5,
+    "cost": 399.99,
+    "imageURL": "https://live.staticflickr.com/65535/48259180871_271e9cae35_m.png",
+    "created": 584359071,
+    "id": "504E7CD2-2138-41FA-8115-D025A490759F",
+    "breed": "German Shepherd",
+    "gender": "male",
+    "birthday": 553082271
+  },
+  {
+    "name": "Snowball",
+    "sellerID": "6C739AF2-34FC-41AA-B456-D6C2812E58D7",
+    "about": "Snowball is a go-getter kind of dog. You'll be very happy with him if you like energetic dogs. He enjoys chasing sticks, balls, frisbees, really anything that you throw! If you get Snowball, and you manage to find my keys, please send those back.",
+    "breederRating": 4.5,
+    "cost": 199.99,
+    "imageURL": "https://live.staticflickr.com/65535/48259249007_0e59e44318_m.png",
+    "created": 584531871,
+    "id": "8059C8E2-981C-491B-BA41-4F0CF53CBCD9",
+    "breed": "Lab mix",
+    "gender": "male",
+    "birthday": 563591967
+  },
+  {
+    "name": "Joey",
+    "sellerID": "6C739AF2-34FC-41AA-B456-D6C2812E58D7",
+    "about": "Joey is a pure-bred Doberman Pinscher. By which I mean, he was feed bread, and his father a Doberman! Be careful, his father is huge...! Joey is best for someone with a lot of outdoor space.",
+    "breederRating": 4.5,
+    "cost": 399.99,
+    "imageURL": "https://live.staticflickr.com/65535/48259249117_2b761a6f6f_m.png",
+    "created": 584596671,
+    "id": "6D403D60-7EC1-4D6E-8495-BA8FF41A7BDE",
+    "breed": "Doberman Mix",
+    "gender": "male",
+    "birthday": 576733407
+  },
+  {
+    "name": "Lulu",
+    "sellerID": "3E590D1B-73B5-45A6-9806-4D52A70DEC22",
+    "about": "Lulu’s parents are pure-bred Poodles, and her mother is the 2018 best-in-show Poodle-Doodle winner. Her father is a good-for-nothing, lazy dog. Fortunately, Lulu takes after her mother, most of the time.",
+    "breederRating": 5,
+    "cost": 225.99,
+    "imageURL": "https://live.staticflickr.com/65535/48259180361_e385cbaa94_m.png",
+    "created": 584603871,
+    "id": "A6634CB5-3E3A-4706-A3F4-4896CD7FA6CF",
+    "breed": "Poodle",
+    "gender": "female",
+    "birthday": 568848543
+  }
+]
