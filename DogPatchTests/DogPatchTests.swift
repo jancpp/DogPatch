@@ -101,7 +101,7 @@ final class AsyncTestCase: XCTestCase {
       XCTAssertEqual((response as? HTTPURLResponse)?.statusCode, 200)
       
       do {
-          _ = try JSONDecoder().decode([OrthopedicDogtor].self, from: try XCTUnwrap(data))
+        _ = try JSONDecoder().decode([OrthopedicDogtor].self, from: try XCTUnwrap(data))
       } catch {
         switch error {
         case DecodingError.keyNotFound(let key, _):
@@ -142,6 +142,47 @@ final class AsyncTestCase: XCTestCase {
     }.resume()
     
     waitForExpectations(timeout: timeout)
+  }
+  
+  func test_client() throws {
     
+    struct dataTaskMakerFake: dataTaskMaker {
+      static let dummyURL: URL = URL(string: "dummy")!
+      
+      init() throws {
+        let testBundle = Bundle(for: AsyncTestCase.self)
+        let url = try XCTUnwrap(
+          testBundle.url(forResource: "dogs", withExtension: "json")
+        )
+        data = try Data(contentsOf: url)
+      }
+      
+      let data: Data
+      
+      func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        completionHandler(
+          data,
+          HTTPURLResponse(
+            url: Self.dummyURL,
+            statusCode: 200,
+            httpVersion: nil,
+            headerFields: nil
+          ), nil
+        )
+        
+        final class DataTaskFake: URLSessionDataTask {
+          override init() {}
+        }
+        return DataTaskFake()
+      }
+    }
+    
+    _ = DogPatchClient(baseURL: dataTaskMakerFake.dummyURL, session: try dataTaskMakerFake(), responseQueue: nil).getDogs { dogs, error in
+      defer {self.expectation.fulfill()}
+      
+      XCTAssertEqual(dogs?.count, 4)
+      XCTAssertNil(error)
+    }
+    waitForExpectations(timeout: timeout)
   }
 }
